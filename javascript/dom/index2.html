@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        overflow: hidden;
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(57, 101, 103);
+        color: white;
+        border-radius: 20px;
+        padding: 13px 20px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+    button:active {
+        scale: 0.9;
+    }
+
+    img {
+        height: 150px;
+        width: 100px;
+        border-radius: 60%;
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+        object-position: top;
+    }
+</style>
+
+<body>
+    <button>click images</button>
+    <script>
+        let btn = document.querySelector('button')
+        let body = document.querySelector('body')
+        // btn.addEventListener('click',()=>{
+        // let img = document.createElement('img')
+        // img.setAttribute('src','4img.jpeg')
+        // let x = Math.floor(Math.random()*100)
+        // let y = Math.floor(Math.random()*100)
+        // let rotate = Math.floor(Math.random()*360)
+
+        // img.style.left=x +'%'
+        // img.style.top=y +'%'
+        // img.style.rotate= rotate +'deg'
+        //     body.appendChild(img)
+        //     // console.log(img);
+        // })
+
+
+
+
+        //when click on button, it will create an image with random position and rotation
+        const images = [
+            "https://images.unsplash.com/photo-1642534270237-ae57b321c5bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1609845768806-767fcfc317b6?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1724251334021-1aa52854a019?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1642534270237-ae57b321c5bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1642534270237-ae57b321c5bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+        ];
+
+        btn.addEventListener('click', () => {
+            let img = document.createElement('img')
+            img.src = images[Math.floor(Math.random() * images.length)]
+
+            let x = Math.floor(Math.random() * 100)
+            let y = Math.floor(Math.random() * 100)
+            let rotate = Math.floor(Math.random() * 360)
+            img.style.left=x +'%'
+            img.style.top=y +'%'
+            img.style.rotate=rotate +'deg'
+            document.body.appendChild(img)
+        })
+    </script>
+</body>
+
+</html>

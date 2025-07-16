@@ -15,3 +15,6 @@ imgs.forEach(function(imgs) {
         imgs.setAttribute("src", "https://images.unsplash.com/photo-1743376272672-c130603a3af2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D")
     })
 })
+
+
+
