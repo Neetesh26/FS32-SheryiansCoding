@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <div class="box">
+
+    </div>
+    <button>get random color</button>
+    <script>
+
+
+
+        let box = document.querySelector('.box');
+        //    console.log(box);
+
+        let btn = document.querySelector('button');
+        // console.log(btn);
+
+        btn.addEventListener('click', function (val) {
+            let r = Math.floor(Math.random() * 225);
+            let g = Math.floor(Math.random() * 225);
+            let b = Math.floor(Math.random() * 225);
+            
+            box.style.backgroundColor = `rgb(${r}, ${g} , ${b})`;
+        })
+
+    </script>
+</body>
+
+</html>

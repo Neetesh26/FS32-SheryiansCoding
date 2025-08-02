@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        /* padding: 10px; */
+        background-image: url('https://media.istockphoto.com/id/847441868/photo/traveler-hiking-alone-in-the-misty-forest-at-sunset.jpg?s=2048x2048&w=is&k=20&c=0nbWV75dLoUay_KtFPfttDmJCvR3XCxK2GKuDTILg_U=');
+        object-fit: cover;
+        background-size: cover;
+    }
+    .main {
+        height: 100%;
+        width: 100%;
+        /* display: flex; */
+        /* background-color: violet; */
+        position: relative;
+        overflow: hidden;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+                text-transform: capitalize;
+
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        z-index: 9;
+    }
+    .full-nav{
+        background-color: rgba(255, 255, 255, 0.352);
+        backdrop-filter: blur(10px);
+        height: 100%;
+        width: 40%;
+        display: none;
+        flex-direction: column;
+       position: absolute;
+       top: 0;
+       right: 0;
+       padding:  80px 30px;
+       transition: all ease 0.3s;
+       z-index: 1;
+    }
+    .full-nav a {
+        text-decoration: none;
+        color: black;
+        padding: 15px 20px;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1>sheryians</h1>
+
+            <button>
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+        <div class="full-nav">
+            
+                <a href="">home</a>
+                <a href="">career</a>
+                <a href="">about</a>
+                <a href="">contact</a>
+        </div>
+    </div>
+    <script src="nav.js"></script>
+</body>
+
+</html>
