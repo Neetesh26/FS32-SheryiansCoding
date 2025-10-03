@@ -41,3 +41,9 @@ arr.forEach((elem)=>{
     count += elem.like
 })
 console.log("total likes is : ",count);
+
+
+// let arr = ["sh", "sh","nm","d","nm"]
+
+// let newa =  arr.filter((items , idx)=> arr.indexOf(items)== idx )
+// console.log(newa);

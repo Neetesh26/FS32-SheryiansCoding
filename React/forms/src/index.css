@@ -1,0 +1,39 @@
+:root{
+  background-color: #111;
+}
+.info{
+  /* background-color: tomato; */
+  padding: 5px;
+  
+}
+
+.main{
+  display: flexbox;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}
+form{
+  /* text-align: center; */
+  background-color: rgb(105, 103, 103)  ;
+  border-radius: 12px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+label{
+  width: 100%;
+  font-size: 22px;
+}
+input{
+  height: 24px;
+  background-color: bisque;
+  /* outline: none; */
+  border: none;
+}
+button{
+  margin-top: 5px;
+  width: 80px;
+}
